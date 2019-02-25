@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* 封装清除浮动 */
+/* 封装省略号 */
+/* title_h3 封装 h3 及内部的通用样式，（h3 的颜色，头部的渐变色起始颜色，终止颜色） */
+/* 封装公共类 */
+/* 公共类 */
+.loginCenter {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.loginCenter::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+a {
+  color: #6c6c6c;
+}
+
+.intoLeft {
+  float: left;
+}
+
+.intoRight {
+  float: right;
+}
+
+/* 底部 */
+.footer {
+  height: 300px;
+  margin-top: 50px;
+}
+.footer li {
+  border-top: 1px solid #ddd;
+  line-height: 24px;
+  padding: 10px 0;
+}
+.footer a {
+  margin: 0 10px;
+}
+.footer span {
+  color: #ddd;
+}
+.footer span.copyRight, .footer p span {
+  color: #9c9c9c;
+}
+.footer img {
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import "_mixin.scss";
+
+$commonColor:#f50;
+$commonColor_1:#f40;
+
+/* 公共类 */
+.loginCenter{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    @include clearfix;
+}
+a{
+    color: #6c6c6c;
+}
+@include intoLeft;
+@include intoRight;
+
+/* 底部 */
+.footer{
+    height: 300px;
+    margin-top: 50px;
+    li{
+        border-top: 1px solid #ddd;
+        line-height: 24px;
+        padding: 10px 0;
+    }
+    a{
+        margin: 0 10px;
+    }
+    span{
+        color: #ddd;
+    }
+    span.copyRight,p span{
+        color: #9c9c9c;
+    }
+    img{
+        margin-top: 5px;
+    }
+}

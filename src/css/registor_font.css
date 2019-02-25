@@ -1,0 +1,27 @@
+@font-face {
+  font-family: regiconfont;
+  src: url(../fonts/font_1408947319_9759417.eot);
+  src: url(../fonts/font_1408947319_9759417?#iefix) format("embedded-opentype"), url(../fonts/font_1408947319_9759417.woff) format("woff"), url(../fonts/font_1408947319_9759417.ttf) format("truetype"), url(../fonts/font_1408947319_9759417#uxiconfont) format("svg");
+}
+.iconfont {
+  font-family: regiconfont !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: nc_iconfont;
+  src: url(../fonts/font_1465353706_4784257.eot);
+  src: url(../fonts/font_1465353706_4784257?#iefix) format("embedded-opentype"), url(../fonts/font_1465353706_4784257.woff) format("woff"), url(../fonts/font_1465353706_4784257.ttf) format("truetype"), url(../fonts/font_1465353706_4784257#uxiconfont) format("svg");
+}
+.nc_iconfont {
+  font-family: "nc_iconfont";
+  color: #ff3f08;
+  font-size: 16px;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=registor_font.css.map */

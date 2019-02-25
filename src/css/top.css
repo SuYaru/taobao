@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* 封装清除浮动 */
+/* 封装省略号 */
+/* title_h3 封装 h3 及内部的通用样式，（h3 的颜色，头部的渐变色起始颜色，终止颜色） */
+/* 封装公共类 */
+/* 公共类 */
+.intoCenter {
+  width: 1190px;
+  margin: 0 auto;
+}
+.intoCenter::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.intoLeft {
+  float: left;
+}
+
+.intoRight {
+  float: right;
+}
+
+/* 主体内容 */
+.top {
+  height: 35px;
+  background: whitesmoke;
+}
+.top .orange {
+  color: #f22e00;
+}
+.top .top_main {
+  height: 100%;
+  line-height: 100%;
+}
+.top .top_main::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.top .top_left li, .top .top_right li {
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  position: relative;
+  padding: 0 10px;
+}
+.top .top_left li a, .top .top_right li a {
+  display: inline-block;
+  color: #3c3c3c;
+}
+.top .top_left li a::after, .top .top_right li a::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.top .top_left li a.orange_less:hover, .top .top_right li a.orange_less:hover {
+  color: #F40;
+}
+.top .top_left li a.country span, .top .top_right li a.country span {
+  font-size: 12px;
+  display: block;
+  float: left;
+}
+.top .top_left .limit, .top .top_right .limit {
+  height: 6px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+.top .top_left .site-nav-icon, .top .top_right .site-nav-icon {
+  color: #9c9c9c;
+  margin-left: 5px;
+  margin-top: -17px;
+}
+.top .top_left {
+  float: left;
+}
+.top .top_left .moreCountry {
+  display: none;
+  background: #fff;
+  position: absolute;
+  margin-left: -14px;
+  margin-top: -7px;
+  border: 1px solid whitesmoke;
+  border-top: none;
+}
+.top .top_left .moreCountry li {
+  width: 240px;
+}
+.top .top_left li.country_father:hover {
+  background: #fff;
+}
+.top .top_left li.country_father:hover .moreCountry {
+  display: block;
+}
+.top .top_right {
+  float: right;
+}
+.top .top_right .limit_right span {
+  color: #f40;
+  margin-right: 5px;
+  margin-top: 0px;
+}
+.top .top_right .gray span {
+  color: #9c9c9c;
+}
+
+/*# sourceMappingURL=top.css.map */

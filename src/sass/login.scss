@@ -1,0 +1,188 @@
+@charset "utf-8";
+@import "_mixin.scss";
+
+$commonColor:#f50;
+$commonColor_1:#f40;
+
+/* 公共类 */
+.loginCenter{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    @include clearfix;
+}
+a{
+    color: #6c6c6c;
+}
+@include intoLeft;
+@include intoRight;
+
+
+/* 头部 */
+.header{
+    height: 44px;
+    padding: 22px 0;
+    .logo a{
+        display: inline-block;
+        width: 110px;
+        height: 44px;
+        background: url(../img/logo.png) no-repeat;
+        background-size: 110px 44px;
+    }
+    p.safe{
+        background: #fef2f2;
+        border: 1px solid $commonColor;
+        width: 880px;
+        margin-left: 70px;
+        padding: 10px 25px;
+        text-align: center;
+    }
+    .advice{
+        a{
+            display: inline-block;
+            padding: 5px 0;
+        }
+        i{
+            font-size: 16px;
+            color: $commonColor_1;
+        }   
+       
+    }
+}
+
+/* 主体登陆部分 */
+.login{
+    background: url(https://img.alicdn.com/tfs/TB13qdBGVzqK1RjSZFoXXbfcXXa-2500-600.jpg) no-repeat;
+    height: 600px;
+    background-position-x: -290px;
+    position: relative;
+    .login_Content{
+        height: 600px;
+    }
+    .bk_link{
+        display: block;
+        position: absolute;
+        width: 630px;
+        height: 450px;
+        left: 80px;
+        top: 80px;
+    }
+    /* 登陆的大框 */
+    .login_box{
+        position: absolute;
+        right: 60px;
+        top: 120px;
+        width: 350px;
+        height: 350px;
+        padding: 25px 23px;
+        box-sizing: border-box;
+        background: rgba(255,255,255,0.8);
+    }
+    /* 登陆顶部悬浮的扫码登陆 */
+    .qd{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        .scan_code{
+            position: absolute;
+            right: 52px;
+            width: 110px;
+            color: #df9c1f;
+            display: inline-block;
+            padding: 5px;
+            border: 1px solid #f3d995; 
+            background: #fefcee;
+            >i{
+                margin-right: 5px;
+            }
+            >span{
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                border:1px solid;
+                border-color: transparent #f3d995 #f3d995 transparent;
+                right: -7px;
+                top: 50%;
+                background: #fefcee;
+                transform: rotate(-45deg) translateY(-50%);
+            }
+        }
+        a>i{
+            font-size: 52px;
+            color: $commonColor_1;
+        }
+    }
+    
+    /* 登陆主体form 表单 */
+    .userContent{
+        h2{
+            font-size: 16px;
+            color: #3c3c3c;
+            margin: 3px 0;
+        }
+        .submit_content{
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+            input{
+                background: #fff;
+                height: 40px;
+                width: 240px;
+                float: right;
+                padding: 0 10px;
+            }
+        }
+        .username,.password{
+            height: 100%;
+            margin: 20px 2px;  
+        }
+        /* #username:focus,.#password:focus{
+
+        }*/
+        .out-focus{
+            outline: rgb(77, 144, 254) solid 2px ;
+            
+        } 
+        .user_logo,.pass_logo{
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            background: #ddd;
+            text-align: center;
+            display: inline-block;
+            i{
+                font-size: 22px;
+            }
+        }
+        .submit{
+            background: $commonColor_1;
+            color: #fff;
+            width: 100%;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            font-size: 16px;
+            border: none;
+            margin-top: 20px;
+            border-radius: 3px;
+        }
+    }
+
+    /* 下方其他登录方式 */
+    .login_link{
+        margin-top: 25px;
+        a{
+            margin-right: 20px;
+        }
+        i{
+            margin-right: 5px;
+        }
+    }
+    .login_helper{
+        position: absolute;
+        right: 50px;
+        bottom: 25px;
+    }
+}
+

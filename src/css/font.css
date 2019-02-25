@@ -1,0 +1,30 @@
+@font-face {
+  font-family: global-iconfont;
+  src: url(../fonts/font_1404888168_2057645.eot);
+  src: url(../fonts/font_1404888168_2057645.eot?#iefix) format("embedded-opentype"), url(../fonts/font_1404888168_2057645.woff) format("woff"), url(../fonts/font_1404888168_2057645.ttf) format("truetype"), url(../fonts/font_1404888168_2057645.svg#uxiconfont) format("svg");
+}
+.site-nav-icon {
+  font-family: global-iconfont;
+  font-size: 120px;
+  font-style: normal;
+  color: red;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscaleFont type;
+}
+
+@font-face {
+  font-family: iconfont;
+  src: url(../fonts/font_403341_su0gnrfn0hi.eot);
+  src: url(../fonts/font_403341_su0gnrfn0hi.eot?#iefix) format("embedded-opentype"), url(../fonts/font_403341_su0gnrfn0hi.woff) format("woff"), url(../fonts/font_403341_su0gnrfn0hi.ttf) format("truetype"), url(../fonts/font_403341_su0gnrfn0hi.svg#uxiconfont) format("svg");
+}
+.tb-ifont {
+  font-family: iconfont !important;
+  font-size: 14px;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*# sourceMappingURL=font.css.map */

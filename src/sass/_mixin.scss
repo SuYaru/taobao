@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* 封装清除浮动 */
+@mixin clearfix() {
+    &::after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+}
+/* 封装省略号 */
+@mixin ellipsisflag($boxwidth,$boxheight){
+    width:$boxwidth;
+    height:$boxheight;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* title_h3 封装 h3 及内部的通用样式，（h3 的颜色，头部的渐变色起始颜色，终止颜色） */
+@mixin title_h3($color_h3,$begin_span,$end_span){
+    // h3{
+        color: $color_h3;
+        padding: 0 20px;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 50px;
+        border-bottom: 1px solid #f4f4f4;
+        span{
+            display: inline-block;
+            background-image: linear-gradient(45deg, $begin_span, $end_span);
+            width: 4px;
+            height: 16px;
+        }
+    // }
+}
+
+/* 封装公共类 */
+@mixin  intoLeft{
+    .intoLeft{
+        float: left;
+    }
+}
+@mixin  intoRight {
+    .intoRight{
+        float:right;
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>Document</title>
+	<link type="text/css" rel="stylesheet" href="css/login_font.css">
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    
+
+</head>
+<body>
+    <div class="header">
+        <div class="loginCenter">
+            <h1 class="intoLeft logo">
+                <a href="javascript:;">
+                    <!-- <i class="iconfont tb-logo-cn"></i> -->
+                </a>
+            </h1>
+            <p class="intoLeft safe">
+                为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！
+            </p>
+            <p class="advice intoRight">
+                <a href="javascript:;">
+                    <i class="iconfont"></i>
+                        "登录页面"改进建议
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="login">
+        <!-- 一个背景 + 登陆的 form 表单 -->
+        <div class="loginCenter login_Content">
+            <a href="javascript:;" class="bk_link"></a>
+            <div class="login_box">
+                <div class="qd">
+                    <div class="scan_code">
+                        <i class="iconfont"></i>扫码登录更安全
+                        <span></span>
+                    </div>
+                    <!-- 切换扫码登陆 -->
+                   <a href="javascript:;">
+                        <i class="iconfont"></i>
+                   </a> 
+                </div>
+                <div class="userContent">
+                    <h2>密码登录</h2>
+                    <form action="post" class="submit_content">
+                        <!-- 鼠标点击 Input 输入框时，给username/password 加一个 out-focus 类 ( 已实现 )，js 实现 外加边框-->
+                        <div class="username">
+                            <!-- for 绑定 id="XX" 的值 -->
+                            <label for="username" class="user_logo">
+                                <i class="iconfont" title="会员名"></i>
+                            </label>
+                            <input type="text" id="username" placeholder="会员名/邮箱/手机号">
+                        </div>
+                        <div class="password">
+                            <!-- for 绑定 id="XX" 的值 -->
+                            <label for="password" class="pass_logo">
+                                <i class="icon iconfont" title="登录密码"></i>
+                            </label>
+                            <input type="text" id="password">
+                        </div>
+                        <button type="submit" class="submit">登录</button>
+                    </form>
+                </div>
+                <div class="login_link">
+                    <a href="javascript:;">
+                        <i class="iconfont" style="color:#e52425;"></i>微博登录
+                    </a>
+                    <a href="javascript:;">
+                        <i class="iconfont" style="color:#1ba9ee;"></i>支付宝登录
+                    </a>
+                </div>
+                <div class="login_helper">
+                    <a href="javascript:;">忘记密码</a>
+                    <a href="javascript:;">忘记会员名</a>
+                    <a href="registor.html">免费注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script src="script/js/jquery.js"></script>
+    <script>
+        $('.footer').load('footer.html');
+    </script>
+</body>
+
+</html>

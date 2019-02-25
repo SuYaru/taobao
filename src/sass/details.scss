@@ -1,0 +1,415 @@
+@charset "utf-8";
+@import "_mixin.scss";
+
+$commonColor:#f50;
+
+.clearFix{
+    @include clearfix;
+}
+.commonColor{
+    color: #f50 !important;
+}
+.detailCenter{
+    width: 1140px;
+    margin: 0 auto;
+    @include clearfix();
+}
+.navCenter{
+    width: 950px;
+    margin: 0 auto;
+    @include clearfix();
+}
+.tb-icon{
+    margin-right:5px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/jingZi_sprite.png) no-repeat;
+}
+/* 顶部导航：公共样式和类 */
+@import "top.scss";
+
+/* 头部店铺描述 */
+.header{
+    padding: 13px 0;
+    .shop{
+        height: 45px;
+        margin-left: 15px;
+    }
+    .shop_name,.shop_level{
+        border-left: 1px solid #f1f1f1;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        /* display: inline-block; */
+        height: 100%;
+
+    }
+    /* 店铺名称描述 */
+    .shop_name_logo{
+        line-height: 10px;
+        a{
+            font-weight: 500;
+        }
+        .shop_logo{
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url(../img/shop_sprite.png) no-repeat;
+            background-position: -259px 0;
+        }
+        .shop_ww{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url(https://img.alicdn.com/tps/i1/T15AD7FFFaXXbJnvQ_-130-60.gif) no-repeat;
+            background-position: -80px 0;
+        }
+    }
+    /* 店铺评级 */
+    .level_items{
+        p{
+            margin-bottom: 5px;
+            margin-right: 10px;
+        }
+        i{
+            display: inline-block;
+            width: 9px;
+            height: 14px;
+            background: url(https://gtms02.alicdn.com/tps/i2/TB10c0GIXXXXXX0XVXXGEZzGpXX-40-40.png) no-repeat;
+            background-position: -6px -3px;
+        }
+    }
+    
+    /* 店铺内部搜索 */
+    .searchGoods{
+        /* 头部搜索框 */
+        .search_for{
+            background: #f40;
+            height: 30px;
+            display: inline-block;
+            input{
+                display: inline-block;
+                width: 280px;
+                border:none;
+                background: #fff;
+                height: 26px;
+                float: left;
+                margin: 2px;
+            }
+            button{
+                color: #fff;
+                display: inline-block;
+                background: none;
+                border: none;
+                height: 100%;
+                cursor: pointer;
+            }
+        }
+        .search_for_2{
+            display: inline-block;
+            border: 1px solid #f40;
+            button{
+                height: 28px;
+                color: #f40;
+                display: inline-block;
+                border: none;
+                cursor: pointer;
+                background: #ffd9b3;
+
+            }
+        }
+
+        /* 底部搜索 */
+        .search_bt{
+            text-align: right;
+            height: 16px;
+            line-height: 16px;
+            padding: 6px 0;
+            a{
+                margin-right: 15px;
+            }
+            .search_qrcode{
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                background: url(../img/shop_sprite.png) no-repeat;
+                background-position: -792px -86px;
+            }
+            em{
+                font-style: normal;
+                font-size: 16px;
+            }
+            i{
+                display: inline-block;
+                margin-bottom: -3px;
+            }
+        }
+    }
+}
+
+/* 头部导航 */
+.nav{
+    border-top: 1px dashed #000;
+    height: 150px;
+    background: url(https://gdp.alicdn.com/tps/i4/T1BOyfFoxfXXcqrM2Y-44-150.png) repeat-x;
+    h1{
+        font-size: 24px;
+        line-height: 120px;
+    }
+    .divice{
+        height: 30px;
+        line-height: 30px;
+        li{
+            float: left;
+            border-right: 1px solid #3871B7;
+            padding: 0 10px;
+        }
+        a{
+            color: #C2D5ED;
+        }
+        .tag{
+            width: 9px;
+            height: 8px;
+            background: url(../img/details_sprite.gif) no-repeat;
+            background-position: 0 -50px;
+            display: inline-block;
+        }
+    }
+}
+
+/* 主体内容 */
+.section{
+    padding: 10px 0;
+    .section_1,.section_2{
+        border: 1px solid #E8E8E8;
+    }
+    .section_1_left{
+        /* 整体样式 */
+        border-right: none;
+        // margin-right: 200px;
+        padding: 20px 0 20px 20px;
+        li{
+            float: left;
+            margin-right: 25px;
+        }
+        a{
+            display: inline-block;
+            color: #6C6C6C;
+        }
+        span{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        /* 放大镜效果样式 */
+        .nowImg{
+            display: inline-block;
+            position: relative;
+        }
+        .now_small,.now_big{
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .now_big{
+           display: none;
+        }
+        .chooseImg{
+            margin: 20px 0;
+            a{
+                border: 2px solid #fff;
+                font-size: 0;
+            }
+            a:hover{
+                border-color: #f40;
+            }
+        }
+    }
+    .section_1_right{
+        padding: 0 20px 20px 0;
+        width: 498px;
+        h3{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 21px;
+            padding: 20px 0 10px;
+            color: #3C3C3C;
+        }
+        /* 公共信息 */
+        span.title{
+            width: 60px;
+        }
+        /* 顶部价格信息 */
+        ul.price_all{
+            padding: 15px 10px;
+            margin-bottom: 10px;
+            background-color: #FFF2E8;
+            span{
+                display: inline-block;
+            }
+            
+            li{
+                line-height: 24px;
+                text-align: left;
+                position: relative;
+                margin-bottom: 5px;
+            }
+        }
+        /* 第一行评论 */
+        .price_delete{
+            text-decoration: line-through;
+        }
+        .comment_position{
+            position: absolute;
+            top: 0;
+            right: -15px;
+            a{
+                display: inline-block;
+                padding: 0 10px;
+                text-align: center;
+                strong{
+                    display: block;
+                }
+            }
+            .comment{
+                border-right:1px solid #ffe4d0;
+            }
+        }
+        /* 第二行 淘宝价 */
+        .tb_price{
+            font-size: 26px;
+            color: #F40;
+            margin-right: 10px;
+        }
+        .crazy_cell{
+            background: #FF8E1B;
+            color: #fff;
+            padding: 0 5px;
+        }
+        /* 第三行 优惠 */
+        .tb-icon-coin{
+            background: url()
+        }
+        .getRight{
+            margin-left: 5px;
+            border-bottom: 1px dotted #f40;
+            color: #f40;
+        }
+
+        /* 中间货物/ 配送信息 */
+
+        .goodMessage{
+            span{
+                display: inline-block;
+            }
+            li{
+                padding: 5px 10px;
+                position: relative;
+            }
+            i{
+                display: inline-block;
+                padding: 6px;
+                border: 1px solid #DCDCDC;
+                cursor: pointer;
+            }
+            i.huabei{
+                height: 50px;
+                line-height: 24px;
+                font-style: normal;
+            }
+            i:hover,i.sizeOn{
+                border: 2px solid #f40;
+                padding: 5px;
+            }
+            /* 中间虚线 */
+            .size_dash{
+                border-bottom: 1px dotted #D9D9D9;
+                height: 1px;
+                width: 85%;
+                span{
+                    position: absolute;
+                    right: -12%;
+                    top: 6px;
+                }
+            }
+
+            /* 添加产品数量 */
+            .range_num{
+                width: 48px;
+                height: 26px;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                text-align: center;
+                font-size: 16px;
+                color: #000;
+            }
+            .tb-reduce,.tb-increase{
+                display: inline-block;
+                width:26px;
+                height: 26px;
+                line-height: 26px;
+                text-align: center;
+                border: 1px solid #ccc;
+                background: #ededed; 
+            }
+        }
+
+        /* 两个购买按钮 */
+        .buy_btns{
+            margin-top: 30px;
+            a{
+                display: inline-block;
+                padding: 8px 32px;
+                border-radius: 3px;
+                margin-right: 30px;
+                font-size: 16px;
+                height: 38px;
+                line-height: 38px;
+            }
+            .buy_01{
+                color: #E5511D;
+                border-color: #F0CAB6;
+                background: #FFE4D0;
+            }
+            .buy_02{
+                color: #FFF;
+                border-color: #F40;
+                background: #F40;
+            }
+        }
+    }
+
+    .section_2{
+        width: 200px;
+        margin-left: -200px;
+        padding: 8px 30px;
+        box-sizing: border-box;
+        color: #9b9b9b;
+        font-weight: 200;
+        height: 592px;
+        overflow: hidden;
+        border-left: none;
+        h2{
+            height: 22px;
+            text-align: left;
+        }
+        li{
+            margin-bottom: 20px;
+            position: relative;
+        }
+        img{
+            width: 140px;
+        }
+        .more_goods{
+            position: absolute;
+            bottom:0;
+            width: 100%;
+            left: 0;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            background: rgba(255,255,255,0.6);
+            color: #000;
+        }
+    }
+}

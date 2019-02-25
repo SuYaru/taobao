@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import "_mixin.scss";
+
+/* 公共类 */
+.intoCenter{    
+    width: 1190px;
+    margin: 0 auto;
+    @include clearfix;
+}
+
+@include intoLeft;
+@include intoRight;
+
+/* 主体内容 */
+.top{           // 顶部导航
+    height: 35px;
+    background: rgb(245, 245, 245);
+    .orange{
+        color: #f22e00;
+    }
+    .top_main{
+        height: 100%;
+        line-height: 100%;
+        @include clearfix;
+    }
+    .top_left,.top_right{  // 两边公共样式
+        li{
+            float: left;
+            height: 35px;
+            line-height: 35px;
+            position: relative;
+            padding: 0 10px;
+            // font-size: 12px;
+        }
+        li a{
+            display: inline-block;
+            color: rgb(60, 60, 60);
+            @include clearfix;
+        }
+        li a.orange_less:hover{
+            color:#F40;
+        }
+        li a.country span{
+            font-size: 12px;
+            display: block;
+            float: left;
+        }
+        .limit{
+            height: 6px;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+        .site-nav-icon{
+            color: rgb(156,156,156);
+            margin-left: 5px;
+            margin-top: -17px;
+        }
+    }
+    .top_left{  // 多写的 二级导航栏样式
+        float: left;
+        .moreCountry{
+            display: none;
+            background: #fff;
+            position: absolute;
+            margin-left: -14px;
+            margin-top: -7px;
+            border: 1px solid rgb(245,245,245);
+            border-top: none;
+        }
+        .moreCountry li{
+            width: 240px;
+        }
+        li.country_father:hover{
+            background: #fff;
+        }
+        li.country_father:hover .moreCountry{
+            display: block;
+        }
+        
+    }
+    .top_right{ // 右侧特殊样式
+        float: right;
+        .limit_right span{
+            color: #f40;
+            margin-right: 5px;
+            margin-top: 0px;
+        }
+        .gray span{
+            color: #9c9c9c;
+        }
+    }
+}
