@@ -11,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/details.js"></script>
     <!-- 头部直接导入 -->
     <div class="top">
         <div class="top_main intoCenter">
@@ -201,31 +202,11 @@
                     <!-- 该产品的下方多个小图 -->
                     <div class="chooseImg">
                         <ul class="clearFix">
-                            <li>
+                            <!-- <li>
                                 <a href="javacript:;">
                                     <img src="https://gd3.alicdn.com/imgextra/i2/2588456850/TB2AF3eetHO8KJjSZFtXXchfXXa_!!2588456850.jpg_50x50.jpg_.webp" alt="">
                                 </a>
-                            </li>
-                            <li>
-                                <a href="javacript:;">
-                                    <img src="https://gd3.alicdn.com/imgextra/i3/2588456850/TB2j7ERmwDD8KJjy0FdXXcjvXXa_!!2588456850.jpg_50x50.jpg_.webp" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javacript:;">
-                                    <img src="https://gd3.alicdn.com/imgextra/i3/2588456850/TB2gxzFevfM8KJjSZPfXXbklXXa_!!2588456850.jpg_50x50.jpg_.webp" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javacript:;">
-                                    <img src="https://gd1.alicdn.com/imgextra/i1/2588456850/TB2LGiPmILJ8KJjy0FnXXcFDpXa_!!2588456850.jpg_50x50.jpg_.webp" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javacript:;">
-                                    <img src="https://gd3.alicdn.com/imgextra/i3/2588456850/O1CN0120TLWExhT9b31fV_!!0-item_pic.jpg_50x50.jpg_.webp" alt="">
-                                </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <!-- 底部店铺情况 -->
@@ -278,9 +259,6 @@
                             <img src="https://img.alicdn.com/tps/TB1xlnONpXXXXa9aXXXXXXXXXXX-80-16.png" alt="">100元店铺优惠券，满800元可用
                             <a href="javascript:;" class="getRight">领取</a>
                         </li>
-                        <li>
-                            <span class="title">配送</span>
-                        </li>
                     </ul>
                     <ul class="goodMessage">
                         <li>
@@ -302,7 +280,7 @@
                         <li class="size_dash">
                             <span>尺码助手</span>   
                         </li>
-                        <li>
+                        <li class="size_item">
                             <span class="title">尺码</span>
                             <i class="sizeOn">XS</i>
                             <i>S</i>
@@ -310,33 +288,21 @@
                             <i>L</i>
                             <i>XL</i>
                         </li>
-                        <li>
-                            <span class="title">颜色分类</span>
+                        <li class="divice_color">
+                            <!-- <span class="title">颜色分类</span>
                             <i class="sizeOn">
                                 <img src="http://gd1.alicdn.com/imgextra/i1/2588456850/TB2.8jhdQfb_uJkSnfoXXb_epXa_!!2588456850.jpg_30x30.jpg" alt="">
-                            </i>
-                            <i> 
-                                <img src="http://gd1.alicdn.com/imgextra/i1/2588456850/TB2o03pmwvD8KJjy0FlXXagBFXa_!!2588456850.jpg_30x30.jpg" alt="">
-                            </i>
-                            <i>
-                                <img src="http://gd3.alicdn.com/imgextra/i3/2588456850/TB2J.s3mrYI8KJjy0FaXXbAiVXa_!!2588456850.jpg_30x30.jpg" alt="">
-                            </i>
-                            <i>
-                                <img src="//gd3.alicdn.com/imgextra/i2/2588456850/TB2cJnImx6I8KJjSszfXXaZVXXa_!!2588456850.jpg_30x30.jpg" alt="">
-                            </i>
-                            <i>
-                                <img src="//gd3.alicdn.com/imgextra/i3/2588456850/TB2KcUWmxPI8KJjSspfXXcCFXXa_!!2588456850.jpg_30x30.jpg" alt="">
-                            </i>
+                            </i> -->
                         </li>
                         <li >
                             <span class="title">数量</span>
-                            <span class="clearFix ">
+                            <span class="clearFix">
                                 <a href="javascript:void(0);" title="减1" class="tb-reduce tb-iconfont intoLeft">ƛ</a>
                                 <input type="text" name="" id="" class="intoLeft range_num" value="1">
                                 <a href="javascript:void(0);" hidefocus="" class="tb-increase tb-iconfont intoLeft" title="加1">ƚ</a>
                             </span>
                         </li>
-                        <li>
+                        <li class="huabeis">
                             <span class="title">花呗分期</span>
                             <!-- class="sizeOn" -->
                             <i class="huabei">
@@ -355,7 +321,7 @@
                     </ul>
                     <div class="buy_btns">
                         <a href="javascript:;" class="buy_01">立即购买</a>
-                        <a href="javascript:;" class="buy_02">
+                        <a href="cart.html" class="buy_02" target="_self">
                             <i class="tb-iconfont">ŭ</i>
                             加入购物车
                         </a>
@@ -396,9 +362,5 @@
             </div>
         </div>
     </div>
-    <script src="script/js/jquery.js"></script>
-    <script>
-        // $('.top').load('top.html');
-    </script>
 </body>
 </html>

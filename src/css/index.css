@@ -433,6 +433,9 @@
   position: fixed;
   top: 440px;
   right: 300px;
+  /*  .fixed_5{
+       color: #F40;
+   } */
 }
 .fixed_left .tb-ifont {
   width: 50px;
@@ -454,18 +457,22 @@
   padding: 12px;
   color: #3C3C3C;
 }
-.fixed_left li a.fixed_1 {
-  color: #fff;
-}
 .fixed_left li:first-child {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 .fixed_left li:hover a {
+  background: #f40;
   color: #fff;
 }
 .fixed_left .bk_color {
   background: #F40;
+}
+.fixed_left .bk_color a {
+  color: #fff;
+}
+.fixed_left .fixed_1, .fixed_left .fixed_5 {
+  color: #f40;
 }
 .fixed_left .fixed_2 {
   color: #f05;
@@ -475,9 +482,6 @@
 }
 .fixed_left .fixed_4 {
   color: #A8C001;
-}
-.fixed_left .fixed_5 {
-  color: #F40;
 }
 
 /* 主体内容 */
@@ -546,13 +550,18 @@
 .section_1 .section_1_left .section_1_left_top .left_content .lunBo_1 {
   position: relative;
   display: inline-block;
+  width: 520px;
+  height: 280px;
+  overflow: hidden;
 }
 .section_1 .section_1_left .section_1_left_top .left_content .lunBo_1 > ul {
   width: 520px;
   height: 280px;
+  left: 0;
+  top: 0;
   overflow: hidden;
   display: inline-block;
-  position: relative;
+  position: absolute;
 }
 .section_1 .section_1_left .section_1_left_top .left_content .lunBo_1 > ul::after {
   display: block;
@@ -649,6 +658,11 @@
   display: inline-block;
   position: relative;
   overflow: hidden;
+}
+.section_1 .section_1_left .section_1_left_top .left_content .lunBo_2 .tmall_content ul {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .section_1 .section_1_left .section_1_left_top .left_content .lunBo_2 .tmall_content ul::after {
   display: block;
@@ -1616,7 +1630,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 236px;
+  width: 237px;
   height: 82px;
   background: #f50;
   color: #fff;

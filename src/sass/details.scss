@@ -186,7 +186,7 @@ $commonColor:#f50;
         /* 整体样式 */
         border-right: none;
         // margin-right: 200px;
-        padding: 20px 0 20px 20px;
+        padding: 20px;
         li{
             float: left;
             margin-right: 25px;
@@ -204,6 +204,8 @@ $commonColor:#f50;
         .nowImg{
             display: inline-block;
             position: relative;
+            width: 400px;
+            height: 400px;
         }
         .now_small,.now_big{
             width: 400px;
@@ -213,14 +215,36 @@ $commonColor:#f50;
         }
         .now_big{
            display: none;
+           position: absolute;
+           left: 410px;
+           top: 0;
+           z-index: 10;
+           overflow: hidden;
+           img{
+               position: absolute;
+               left: 0;
+               right: 0;
+           }
+        }
+        .ns{
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 0;
+            top: 0;
+            background: url(https://gtms01.alicdn.com/tps/i4/T12pdtXaldXXXXXXXX-2-2.png);
+            display: none;
+            z-index: 20;
         }
         .chooseImg{
             margin: 20px 0;
             a{
+                float: left;
+                margin-right: 25px;
                 border: 2px solid #fff;
                 font-size: 0;
             }
-            a:hover{
+            a:hover,a.sizeOn{
                 border-color: #f40;
             }
         }
@@ -380,15 +404,16 @@ $commonColor:#f50;
     }
 
     .section_2{
-        width: 200px;
+        width: 180px;
         margin-left: -200px;
-        padding: 8px 30px;
+        padding: 8px 10px;
         box-sizing: border-box;
         color: #9b9b9b;
         font-weight: 200;
         height: 592px;
         overflow: hidden;
         border-left: none;
+        text-align: center;
         h2{
             height: 22px;
             text-align: left;

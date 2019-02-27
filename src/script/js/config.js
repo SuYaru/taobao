@@ -9,6 +9,6 @@ require.config({
 	},
 	shim:{//非AMD规范的JS文件,就需要使用Require中的shim.
 		exports:'',//exports 表示输出的对象名
-		dep:['jquery']//deps 为数组,表示其依赖的库,
+		dep:['jquery','jqcookie']//deps 为数组,表示其依赖的库,
 	}
 });

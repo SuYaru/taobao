@@ -10,4 +10,5 @@
 });*/
 
 
-require(['tab','lunbo']);
+require(['tab','lazyLoad','floor','index_Init']);
+
