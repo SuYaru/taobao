@@ -31,7 +31,6 @@ $commonColor_6:#ff4001;
     position: fixed;
     z-index: 100;
     width: 680px;
-    //height: 300px;
     padding: 20px;
     border: 2px solid $commonColor_3;
     border-top: 2px solid $commonColor_4;
@@ -199,7 +198,8 @@ $commonColor_6:#ff4001;
                 border: 1px solid #dedede;
                 box-sizing: border-box;
                 width: 230px;
-                text-align: center;
+                text-align: left;
+                padding-left: 15px;
             }
             select{
                 border-color: #dedede;

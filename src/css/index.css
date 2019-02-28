@@ -432,7 +432,7 @@
 .fixed_left {
   position: fixed;
   top: 440px;
-  right: 300px;
+  right: 10%;
   /*  .fixed_5{
        color: #F40;
    } */

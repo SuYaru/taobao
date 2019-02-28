@@ -176,6 +176,8 @@ $commonColor:#f50;
     }
 }
 
+
+
 /* 主体内容 */
 .section{
     padding: 10px 0;
@@ -261,6 +263,7 @@ $commonColor:#f50;
         }
         /* 公共信息 */
         span.title{
+            display: inline-block;
             width: 60px;
         }
         /* 顶部价格信息 */
@@ -401,6 +404,26 @@ $commonColor:#f50;
                 background: #F40;
             }
         }
+
+        /* 承诺和支付等 */
+        .commit{
+            margin: 44px 0;
+            li{
+                margin-bottom: 34px;
+                @include clearfix;
+            }
+            a{
+                display: inline-block;
+                line-height: 16px;
+                margin-right: 10px;
+            }   
+            img{
+                float: left;
+                width: 16px;
+                height: 16px;
+                margin-right: 5px;
+            }
+        }
     }
 
     .section_2{
@@ -410,7 +433,6 @@ $commonColor:#f50;
         box-sizing: border-box;
         color: #9b9b9b;
         font-weight: 200;
-        height: 592px;
         overflow: hidden;
         border-left: none;
         text-align: center;

@@ -89,7 +89,6 @@ define(['config'],function(){
             $('.now_big').show();
 
             $(document).on('mousemove',function(ev){
-                var ev=ev || window.event;
                 // offsetLeft 适用于 margin 和 padding 
                 var l=ev.clientX-$('.nowImg').offset().left-$('.ns').width()/2;
                 var t=ev.clientY-$('.nowImg').offset().top-$('.ns').height()/2;

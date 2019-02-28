@@ -372,6 +372,7 @@
   /* 第三行 优惠 */
   /* 中间货物/ 配送信息 */
   /* 两个购买按钮 */
+  /* 承诺和支付等 */
 }
 .section .section_1_right h3 {
   font-size: 16px;
@@ -381,6 +382,7 @@
   color: #3C3C3C;
 }
 .section .section_1_right span.title {
+  display: inline-block;
   width: 60px;
 }
 .section .section_1_right ul.price_all {
@@ -510,6 +512,28 @@
   border-color: #F40;
   background: #F40;
 }
+.section .section_1_right .commit {
+  margin: 44px 0;
+}
+.section .section_1_right .commit li {
+  margin-bottom: 34px;
+}
+.section .section_1_right .commit li::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.section .section_1_right .commit a {
+  display: inline-block;
+  line-height: 16px;
+  margin-right: 10px;
+}
+.section .section_1_right .commit img {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
 .section .section_2 {
   width: 180px;
   margin-left: -200px;
@@ -517,7 +541,6 @@
   box-sizing: border-box;
   color: #9b9b9b;
   font-weight: 200;
-  height: 592px;
   overflow: hidden;
   border-left: none;
   text-align: center;

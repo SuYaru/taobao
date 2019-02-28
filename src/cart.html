@@ -17,7 +17,7 @@
     <div class="nav">
         <div class="cartCenter clearFix">
             <h1> 
-                <a href="javascript:;">
+                <a href="index.html">
                     <img src="https://img.alicdn.com/tps/i3/TB1XIwGHFXXXXcBXFXXLZDx_pXX-107-44.png" alt="">
                 </a>
                 <span>购物车</span> 
@@ -46,6 +46,27 @@
             </div>
         </div>
     </div>
+    <div class="empty_content" >
+        <div class="cartCenter">
+            <div class="empty_title">
+                <p class="intoLeft">
+                    您的位置：
+                    <a href="index.html" class="bk_right">首页</a>
+                    <a href="javascript:;" class="bk_right">我的淘宝</a>
+                    我的购物车
+                </p>
+                
+    
+                购物车帮您一次性完成批量购买与付款，下单更便捷，付款更简单！
+                <a href="javascript:;">如何使用购物车</a>
+            </div>
+            <div class="empty">
+                <h3>您的购物车还是空的，赶紧行动吧！您可以：</h3>
+                看看 <a href="javascript:;">我的收藏夹</a> <br>
+                看看 <a href="javascript:;">已买到的宝贝</a> 
+            </div>
+        </div>
+    </div>
     <div class="cart_content">
         <!-- tab 切换的3 个按钮。按钮下面有 li ，存放购物车信息 -->
         <div class="cartCenter">
@@ -54,7 +75,7 @@
                     <li class="current">
                         <a href="javascript:;">
                             全部商品 
-                            <span class="all_num">3</span>
+                            <span class="all_num">0</span>
                         </a>
                     </li>
                     <li>
@@ -79,7 +100,7 @@
             <div class="cart_items">
                 <div class="cart_head clearFix">
                     <div class="cart_item">
-                        <input type="checkbox" name="select_all" id="select_all">全选
+                        <input type="checkbox" name="select_all" class="select_all">全选
                     </div>
                     <div class="cart_item more_item">
                         商品信息
@@ -101,7 +122,7 @@
                     <div class="cart_line clearFix" style="display:none;">
                         <div class="cart_item">
                             <div class="checkWeather">  
-                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="" class="checkfor">
                             </div>
                             <a href="javascript:;" class="cart-pic">
                                 <img src="https://img.alicdn.com/bao/uploaded/i3/2627922418/O1CN01zzq3Ff1TjUATAaugz_!!2627922418.jpg_80x80.jpg" alt="">
@@ -122,8 +143,8 @@
                             </p>
                         </div>
                         <div class="cart_item">
-                            <span class="delete_price">￥569.00</span>
-                            <em class="cart-price">￥186.61</em>
+                            <span class="delete_price">￥569.00</span><br>
+                            <em>￥</em><em class="cart-price">186.61</em>
                         </div>
                         <div class="cart_item">
                             <span class="clearFix ">
@@ -133,7 +154,7 @@
                             </span>
                         </div>
                         <div class="cart_item">
-                            <span class="itemNum">￥186.61</span>
+                            <span>￥</span> <span class="itemNum">186.61</span>
                         </div>
                         <div class="cart_item">
                             <a href="javascript:;" class="delete_item">删除</a>
@@ -144,10 +165,10 @@
                 
                 <div class="footer clearFix">
                     <div class="cart_item">
-                        <input type="checkbox" name="select_all" id="select_all">全选
+                        <input type="checkbox" name="select_all" class="select_all">全选
                     </div>
                     <div class="cart_item">
-                        <a href="javascript:;">删除</a>
+                        <a href="javascript:;" class="delete_items">删除</a>
                         
                     </div>
                     <div class="cart_item">
@@ -169,9 +190,25 @@
             </div>
         </div>
     </div>
-    <script src="script/thirdplugins/jquery.js"></script>
-    <script>
-        $('.top').load('top.html');
-    </script>
+    <div class="confirmTab">
+        <div class="confirm">
+            <h3>删除宝贝</h3>
+            <a href="javascript:;" class="close_head"></a>
+            <p>确认要删除该宝贝吗？</p>
+            <p>
+                <span class="sure">确认</span>
+                <span class="close">关闭</span>
+            </p>
+        </div>
+    </div>
+    <div class="pleaseChoose">
+        <div class="confirm">
+            <em></em>
+            <h3>提示信息</h3>
+            <a href="javascript:;" class="close_choose"></a>
+            <p>请选择宝贝</p>
+        </div>
+    </div>
+    <!-- <script src="script/thirdplugins/jquery.js"></script> -->
 </body>
 </html>

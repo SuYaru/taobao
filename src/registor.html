@@ -88,7 +88,7 @@
                 </ul>
             </div>
             <div class="regist_forms intoCenter_2">
-                <form action="" class="setUsername ">
+                <form action="" class="setUsername show">
                     <div class="regist_item ">
                         <span class="title">
                             手机号
@@ -125,7 +125,7 @@
                         <button type="submit" class="nextStep">下一步</button>
                     </div>
                 </form>
-                <form action="" class="countMessage show">
+                <form action="" class="countMessage ">
                     <div class="regist_item">
                         <span class="title">
                             登录名
@@ -184,19 +184,6 @@
         
     </div>
 </body>
-<script src="script/js/jquery.js"></script>
-<script>
-    $('.not_agree').on('click',function(){
-        history.back(-1);
-    })
-    $('.agreeWith').on('click',function(){
-        $('.registAgree').css({'display':'none'});
-    })
-    $('.going').on('click',function(){
-        $('.correct').css({'display':'block','top':'0px'});
-        $(this).css({'display':'none'});
-    });
-    $('.footer').load('footer.html');
-    $('.top').load('top.html');
-</script>
+<script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/registor.js"></script>
+
 </html>

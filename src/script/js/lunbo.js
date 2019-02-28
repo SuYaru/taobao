@@ -37,12 +37,12 @@
 				$(changeoptions.arrow).hide();
 				timer=setInterval(function(){
 					$(changeoptions.right).click();
-				},3000);
+				},1000);
 			});
 			//  初始启动
 			timer=setInterval(function(){
 				$(changeoptions.right).click();
-			},3000);
+			},1000);
 			
 			$(changeoptions.btns).hover(function(){
 				changeoptions.num=$(this).index();//当前的索引
@@ -99,3 +99,5 @@
 		}
 	});
 })(jQuery);
+
+
