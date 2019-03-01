@@ -7,54 +7,44 @@
 .loginCenter {
   width: 1200px;
   margin: 0 auto;
-  position: relative;
-}
+  position: relative; }
 .loginCenter::after {
   display: block;
   clear: both;
-  content: "";
-}
+  content: ""; }
 
 a {
-  color: #6c6c6c;
-}
+  color: #6c6c6c; }
 
 .intoLeft {
-  float: left;
-}
+  float: left; }
 
 .intoRight {
-  float: right;
-}
+  float: right; }
 
 /* 头部 */
 .header {
   height: 44px;
-  padding: 22px 0;
-}
+  padding: 22px 0; }
 .header .logo a {
   display: inline-block;
   width: 110px;
   height: 44px;
   background: url(../img/logo.png) no-repeat;
-  background-size: 110px 44px;
-}
+  background-size: 110px 44px; }
 .header p.safe {
   background: #fef2f2;
   border: 1px solid #f50;
   width: 880px;
   margin-left: 70px;
   padding: 10px 25px;
-  text-align: center;
-}
+  text-align: center; }
 .header .advice a {
   display: inline-block;
-  padding: 5px 0;
-}
+  padding: 5px 0; }
 .header .advice i {
   font-size: 16px;
-  color: #f40;
-}
+  color: #f40; }
 
 /* 主体登陆部分 */
 .login {
@@ -65,19 +55,16 @@ a {
   /* 登陆的大框 */
   /* 登陆顶部悬浮的扫码登陆 */
   /* 登陆主体form 表单 */
-  /* 下方其他登录方式 */
-}
+  /* 下方其他登录方式 */ }
 .login .login_Content {
-  height: 600px;
-}
+  height: 600px; }
 .login .bk_link {
   display: block;
   position: absolute;
   width: 630px;
   height: 450px;
   left: 80px;
-  top: 80px;
-}
+  top: 80px; }
 .login .login_box {
   position: absolute;
   right: 60px;
@@ -86,13 +73,11 @@ a {
   height: 350px;
   padding: 25px 23px;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.8);
-}
+  background: rgba(255, 255, 255, 0.8); }
 .login .qd {
   position: absolute;
   top: 5px;
-  right: 5px;
-}
+  right: 5px; }
 .login .qd .scan_code {
   position: absolute;
   right: 52px;
@@ -101,11 +86,9 @@ a {
   display: inline-block;
   padding: 5px;
   border: 1px solid #f3d995;
-  background: #fefcee;
-}
+  background: #fefcee; }
 .login .qd .scan_code > i {
-  margin-right: 5px;
-}
+  margin-right: 5px; }
 .login .qd .scan_code > span {
   position: absolute;
   width: 5px;
@@ -115,41 +98,33 @@ a {
   right: -7px;
   top: 50%;
   background: #fefcee;
-  transform: rotate(-45deg) translateY(-50%);
-}
+  transform: rotate(-45deg) translateY(-50%); }
 .login .qd a > i {
   font-size: 52px;
-  color: #f40;
-}
+  color: #f40; }
 .login .userContent {
         /* #username:focus,.#password:focus{
 
-        }*/
-}
+        }*/ }
 .login .userContent h2 {
   font-size: 16px;
   color: #3c3c3c;
-  margin: 3px 0;
-}
+  margin: 3px 0; }
 .login .userContent .submit_content {
   margin-top: 20px;
   position: relative;
-  overflow: hidden;
-}
-.login .userContent .submit_content input {
+  overflow: hidden; }
+.login .userContent .submit_content input[type='text'], .login .userContent .submit_content input[type="password"] {
   background: #fff;
   height: 40px;
   width: 240px;
   float: right;
-  padding: 0 10px;
-}
+  padding: 0 10px; }
 .login .userContent .username, .login .userContent .password {
   height: 100%;
-  margin: 20px 2px;
-}
+  margin: 20px 2px; }
 .login .userContent .out-focus {
-  outline: #4d90fe solid 2px;
-}
+  outline: #4d90fe solid 2px; }
 .login .userContent .user_logo, .login .userContent .pass_logo {
   width: 40px;
   height: 40px;
@@ -157,11 +132,9 @@ a {
   color: #fff;
   background: #ddd;
   text-align: center;
-  display: inline-block;
-}
+  display: inline-block; }
 .login .userContent .user_logo i, .login .userContent .pass_logo i {
-  font-size: 22px;
-}
+  font-size: 22px; }
 .login .userContent .submit {
   background: #f40;
   color: #fff;
@@ -173,20 +146,16 @@ a {
   border: none;
   margin-top: 20px;
   border-radius: 3px;
-}
+  cursor: pointer; }
 .login .login_link {
-  margin-top: 25px;
-}
+  margin-top: 25px; }
 .login .login_link a {
-  margin-right: 20px;
-}
+  margin-right: 20px; }
 .login .login_link i {
-  margin-right: 5px;
-}
+  margin-right: 5px; }
 .login .login_helper {
   position: absolute;
   right: 50px;
-  bottom: 25px;
-}
+  bottom: 25px; }
 
 /*# sourceMappingURL=login.css.map */

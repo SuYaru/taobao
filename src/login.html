@@ -48,23 +48,23 @@
                 </div>
                 <div class="userContent">
                     <h2>密码登录</h2>
-                    <form action="post" class="submit_content">
+                    <form action="" class="submit_content" method="post">
                         <!-- 鼠标点击 Input 输入框时，给username/password 加一个 out-focus 类 ( 已实现 )，js 实现 外加边框-->
                         <div class="username">
                             <!-- for 绑定 id="XX" 的值 -->
                             <label for="username" class="user_logo">
                                 <i class="iconfont" title="会员名"></i>
                             </label>
-                            <input type="text" id="username" placeholder="会员名/邮箱/手机号">
+                            <input type="text" id="username" name="username" placeholder="登录名/用户名/手机号">
                         </div>
                         <div class="password">
                             <!-- for 绑定 id="XX" 的值 -->
                             <label for="password" class="pass_logo">
                                 <i class="icon iconfont" title="登录密码"></i>
                             </label>
-                            <input type="text" id="password">
+                            <input type="password" id="password" name="password">
                         </div>
-                        <button type="submit" class="submit">登录</button>
+                        <input type="submit" class="submit" id="login" name="" value="登录"></input>
                     </form>
                 </div>
                 <div class="login_link">
@@ -84,6 +84,7 @@
         </div>
     </div>
     <div class="footer"></div>
+    <script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/login.js"></script>
     <script src="script/thirdplugins/jquery.js"></script>
     <script>
         $('.footer').load('footer.html');

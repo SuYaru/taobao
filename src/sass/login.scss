@@ -124,7 +124,7 @@ a{
             margin-top: 20px;
             position: relative;
             overflow: hidden;
-            input{
+            input[type='text'],input[type="password"]{
                 background: #fff;
                 height: 40px;
                 width: 240px;
@@ -166,6 +166,7 @@ a{
             border: none;
             margin-top: 20px;
             border-radius: 3px;
+            cursor: pointer;
         }
     }
 
