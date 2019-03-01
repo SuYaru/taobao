@@ -36,23 +36,31 @@
 			},function(){
 				$(changeoptions.arrow).hide();
 				timer=setInterval(function(){
-					$(changeoptions.right).click();
+					$(changeoptions.right).click(changeoptions);
 				},1000);
 			});
 			//  初始启动
 			timer=setInterval(function(){
 				$(changeoptions.right).click();
 			},1000);
-			
-			$(changeoptions.btns).hover(function(){
+			// 鼠标滑入小白点快速跳转
+			$(changeoptions.btns).on('click',function(){
+				var before=changeoptions.num;
+				var after=$(this).index();
+				if(before>after){
+					$(changeoptions.box).animate({
+						left:parseInt($(changeoptions.box).css("left")) - width*(after-before)
+					})
+				}else{
+					$(changeoptions.box).animate({
+						left:parseInt($(changeoptions.box).css("left"))+width*(before-after)				
+					});
+				}
 				changeoptions.num=$(this).index();//当前的索引
-				timer=setTimeout(function(){
-					change();
-				},400)
-			},function(){
-				clearTimeout(timer);
+				change();
 			});
-			$(changeoptions.right).on('click',function(){
+			// 左右箭头移动
+			$(changeoptions.right).on('click',function(be){
 				changeoptions.num++;
 				if(changeoptions.num==1 && isLast()){
 					changeoptions.num--;
@@ -83,7 +91,7 @@
 				
 				change();
 			});
-			
+			// 改变 导航所属
 			function change(){
 				$(changeoptions.btns).eq(changeoptions.num).addClass('on').siblings('li').removeClass('on');
 			}
@@ -92,7 +100,6 @@
 				if(width*(childLength+1)==left || left ==0 ){
 					return true;
 				}else{
-					// debugger;
 					return false;
 				}
 			}

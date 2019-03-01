@@ -121,7 +121,7 @@ a{
             margin: 3px 0;
         }
         .submit_content{
-            margin-top: 20px;
+            padding-top: 20px;
             position: relative;
             overflow: hidden;
             input[type='text'],input[type="password"]{
@@ -131,17 +131,30 @@ a{
                 float: right;
                 padding: 0 10px;
             }
+            label.error{
+                position: absolute;
+                top: 0;
+                left: 0;
+                border:1px solid #ffb4a8;
+                color:#6C6C6C;
+                line-height: 16px;
+                padding: 6px 20px;
+                width: 100%;
+                text-align: left;
+                background: url(../img/forbiden.png) no-repeat left center #fef2f2;
+               
+            }
         }
         .username,.password{
             height: 100%;
             margin: 20px 2px;  
+            border-radius: 3px;
         }
         /* #username:focus,.#password:focus{
 
         }*/
         .out-focus{
             outline: rgb(77, 144, 254) solid 2px ;
-            
         } 
         .user_logo,.pass_logo{
             width: 40px;

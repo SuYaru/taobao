@@ -111,7 +111,7 @@ a {
   color: #3c3c3c;
   margin: 3px 0; }
 .login .userContent .submit_content {
-  margin-top: 20px;
+  padding-top: 20px;
   position: relative;
   overflow: hidden; }
 .login .userContent .submit_content input[type='text'], .login .userContent .submit_content input[type="password"] {
@@ -120,9 +120,21 @@ a {
   width: 240px;
   float: right;
   padding: 0 10px; }
+.login .userContent .submit_content label.error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #ffb4a8;
+  color: #6C6C6C;
+  line-height: 16px;
+  padding: 6px 20px;
+  width: 100%;
+  text-align: left;
+  background: url(../img/forbiden.png) no-repeat left center #fef2f2; }
 .login .userContent .username, .login .userContent .password {
   height: 100%;
-  margin: 20px 2px; }
+  margin: 20px 2px;
+  border-radius: 3px; }
 .login .userContent .out-focus {
   outline: #4d90fe solid 2px; }
 .login .userContent .user_logo, .login .userContent .pass_logo {
